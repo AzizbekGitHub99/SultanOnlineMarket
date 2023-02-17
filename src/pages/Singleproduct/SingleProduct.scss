@@ -1,0 +1,255 @@
+$main_color: #FFC85E;
+$main_hover: #F3A50D;
+$text_outline: #3F4E65;
+
+
+.SingleProduct{
+    margin-top: 45px;
+    .container{
+        .full-card{
+            .full-card__path{
+                color: #3F4E65;
+                margin-bottom: 65px;
+                span{
+                    margin-right: 20px;
+                    font-size: 14px;
+                    line-height: 120%;
+                }
+                .path-last{
+                    font-size: 14px;
+                    line-height: 120%;                   
+                    opacity: 0.5;
+                }
+            }
+            .full-card__info{
+                display: flex;
+                
+                .info__left{
+                    width: 45%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .info__right{
+                    padding: 35px 40px;
+                    width: 55%;
+                    p{
+                    }
+                    h2{
+                        margin-top: 10px;
+                        font-weight: 400;
+                        font-size: 30px;
+                        line-height: 150%;
+                        span{
+                            font-weight: 800;
+                        }
+                    }
+                    .weight{
+                        margin-top: 10px;
+                        color: $text_outline;
+                        span{
+                            margin-left: 5px;
+                            color: $text_outline;
+                        }
+                    }
+                    .functions{
+                        margin-top: 15px;
+                        .f__top{
+                            padding: 0;
+                            min-height: 60px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .ft__price{
+                                font-weight: 800;
+                                font-size: 30px;
+                                line-height: 130%;                                
+                            }
+                            .ft__adding{
+                                display: flex;
+                                width: 115px;
+                                justify-content: space-between;
+                                .adding__btn{
+                                    width: 34px;
+                                    height: 24px;
+                                    border-radius: 12px;
+                                    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+                                    border: none;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    transition: all 0.3s ease-in;
+                                    &:hover{
+                                        background-color: $main_color;
+                                    }
+                                }
+                                .adding__num{
+
+                                }
+                            }
+                            .ft__to-corzina{
+                                background-color: $main_color;
+                                border: none;
+                                width: 184px;
+                                height: 60px;
+                                border-radius: 30px;
+                                color: white;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 17px;
+                                letter-spacing: 0.15em;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                transition: all 0.3s ease-in;
+                                &:hover{
+                                    background-color: $main_hover;
+                                }
+                                span{
+                                    svg{
+                                    
+                                    }
+                                }
+                            }
+                        }
+                        .f__down{
+                            display: flex;
+                            gap: 10px;
+                            .fd__share{
+                                width: 77px;
+                                height: 77px;
+                                display: grid;
+                                place-items: center;
+                            }
+                            .fd__info{
+                                display: grid;
+                                place-items: center;
+                                text-align: center;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 150%;
+                                
+                            }
+                            .fd__price-list{
+                                place-items: center;
+                                display: grid;
+                                text-align: center;
+                                width: 185px;
+                                border: none;
+                                background-color: white;
+                                p{
+                                    margin: 0;
+                                    span{
+                                        margin-left: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .info{
+                        .info__main{
+                            ul{
+                                list-style: none;
+                                padding: 0;
+                                li{
+                                    strong{
+
+                                    }
+                                }
+                            }
+                        }
+                        .info__description{
+                            .accordion{
+                                .accordion-item{
+                                    border: none;
+            
+                                    ul{
+                                        list-style: none;
+                                        padding: 0;
+                                        li{
+                                            strong{
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        h1{
+            color: $main_color;
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 120%;
+            text-transform: uppercase;
+            margin: 100px 0 50px;
+            span{
+                font-weight: 500;
+                color: black;
+            }
+        }
+        .SingleProduct__cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    .SingleProduct{
+        .container{
+            .full-card{
+                .full-card__path{
+                    display: none;
+                }
+                .full-card__info{
+                    display: block;
+                    .info__left{
+                        width: 90%;
+                        margin: auto;
+                    }
+                    .info__right{
+                        width: 100%;
+                        padding: 0;
+                        h2{
+                            font-size: 16px;
+                            width: 100%;
+                        }
+                        .weight{
+                            display: none;
+                        }
+                        .functions{
+                            margin-top: 20px;
+                            .f__top{
+                                flex-wrap: wrap;
+                                gap: 25px;
+                                .ft__price{
+                                    font-size: 20px;
+                                }
+                            }
+                            .f__down{
+                                flex-wrap: wrap;
+                                gap: 30px;
+                                justify-content: center;
+                                .fd__price-list{
+                                    margin: 30px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            h1{
+                font-size: 20px;
+                margin-top: 50px 0 25px;
+            }
+        }
+    }
+}

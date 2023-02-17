@@ -1,0 +1,87 @@
+$main_color: #FFC85E;
+$main_hover: #F3A50D;
+$text_outline: #3F4E65;
+
+.Corzina{
+    .container{
+        .corzina__path{
+            color: #3F4E65;
+            margin-bottom: 50px;
+            span{
+                margin-right: 20px;
+                font-size: 14px;
+                line-height: 120%;
+            }
+            .path-last{
+                font-size: 14px;
+                line-height: 120%;                   
+                opacity: 0.5;
+            }
+        }
+        .sort__name{
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 120%;
+            text-transform: uppercase;
+        }
+        .corzina__main{
+            width: 100%;
+            margin: 50px 0;
+        }
+        .corzina__foot{
+            margin: 50px 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .foot__btn{
+                width: 190px;
+                height: 60px;
+                text-align: center;
+                border: none;
+                border-radius: 30px;
+                background-color: $main_color;                
+                transition: all 0.3s ease-in;
+                color: white;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 60px;
+                text-decoration: none;
+                &:hover{
+                    background-color: $main_hover;
+                }                
+            }
+            .foot__price{
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 130%;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .Corzina{
+        .container{
+            .corzina__path  {
+                display: none;
+            }
+            .sort__name{
+                font-size: 20px; 
+            }
+            .corzina__main{
+
+            }
+            .corzina__foot{
+                flex-wrap: wrap;
+                justify-content: center;
+                .foot__btn{
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}

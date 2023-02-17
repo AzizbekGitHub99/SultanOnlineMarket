@@ -1,0 +1,135 @@
+$main_color: #FFC85E;
+$main_hover: #F3A50D;
+
+.Section4{
+    .container{
+        .carousel{
+            #carouselExampleCaptions{
+
+                .carousel-indicators{
+                    button{
+
+                    }
+                }
+                .carousel-inner{
+                    .carousel-item{
+                        
+                        .carousel-bg{
+                            background: linear-gradient(0deg, #B7BFCA 0%, #BDC7D0 65.9%, #BDC7D1 100%);
+                            text-align: end;   
+                            img{
+                                width: 100%;
+                            }                     
+                        }
+                        .carousel-caption{
+                            height: 100%;
+                            left: 0;
+                            margin-left: 110px;
+                            text-align: start;
+                            p{
+                                margin-top: 80px;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 150%;
+                                letter-spacing: 0.3em;
+                                text-transform: uppercase;
+                            }
+                            h1{
+                                margin-top: 10px;
+                                font-weight: 500;
+                                font-size: 70px;
+                                line-height: 110%;
+                                span{
+                                    font-weight: 800;
+                                }
+                            }
+                            h2{
+                                margin-top: 35px;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 150%;
+                            }
+                            .carousel__btn{
+                                margin-top: 50px;
+                                width: 35%;
+                                height: 90px;
+                                border-radius: 45px;
+                                background-color: $main_color;
+                                border: none;
+                                color: white;
+                                transition: all 0.3s ease-in;
+                                &:hover{
+                                    background-color: $main_hover;
+                                }
+                            }
+                        }
+                    }
+                }
+                .carousel-control-prev{
+                    height: 67px;
+                    width: 67px;
+                    left: -20px;
+                    top: calc(50% - 34px);
+                    border-radius: 50%;
+                    .carousel-control-prev-icon{
+
+                    }
+                    
+                }
+                .carousel-control-next{
+                    height: 67px;
+                    width: 67px;
+                    right: -20px;
+                    top: calc(50% - 34px);
+
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .Section4{
+        .container{
+            #carouselExampleCaptions{
+                .carousel-inner{
+                    .carousel-item{
+                        .carousel-bg{
+                            text-align: center;
+                        }
+
+                        .carousel-caption{
+                            display: none;
+                            margin: 0;
+                            p{
+                                font-size: 6px;
+                                line-height: 185%;
+                            }
+                            h1{
+                                font-size: 20px;
+                                line-height: 120%;
+                            }
+                            h2{                           
+                                font-size: 12px;
+                                line-height: 120%;
+                            }
+                        }   
+                    }
+                }
+                .carousel-control-prev{
+                    height: 40px;
+                    width: 40px;
+                    left: -10px;
+                }
+                .carousel-control-next{
+                    height: 40px;
+                    width: 40px;
+                    right: -10px;
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,385 @@
+$main_color: #FFC85E;
+$main_hover: #F3A50D;
+$text_outline: #3F4E65;
+
+
+.Footer{
+    margin: auto;
+    margin-top: 100px;
+    height: 500px;    
+    box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.04);
+    background-color: $text_outline;
+    .container{
+        padding-top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .f__info{
+            color: white;
+            width: 23.5%;
+            .f__info__logo{
+                display: flex;
+                margin-right: 35px;
+                align-items: center;
+                margin-bottom: 15px;
+                .logo__img{
+                    margin-right: 5px;
+                }
+                .logo__name{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .price-list__btn__sm{
+                display: none;
+                background-color: $main_color;
+                border: none;
+                border-radius: 20px;                
+                transition: all 0.3s ease-in;
+                &:hover{
+                    background-color: $main_hover;
+                }
+                span{
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .price-list-icon{
+                        margin-left: 14px;
+                    }
+                }
+            }
+            h4{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                margin-bottom: 45px;
+
+            }
+            p{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 150%;
+                margin-bottom: 14px;
+            }
+            .info__email{
+                display: flex;
+                width: 290px;
+                input{
+                    width: 100%;
+                    height: 60px;
+                    border-radius: 30px;
+                    border: none;
+                    padding-left: 20px;
+                }
+                .email__btn{
+                    background-color: $main_color;
+                    border: none;
+                    width: 40px;
+                    height: 40px;
+                    z-index: 1;
+                    border-radius: 50%;
+                    position: relative;
+                    right: 15%;
+                    top: 10px;
+                    transition: all 0.3s ease-in;
+                    &:hover{
+                        background-color: $main_hover;
+                    }
+                }
+            }
+        }
+        .f__menu{
+            color: white;
+            h3{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 150%;
+                margin-bottom: 25px;
+            }
+            ul{
+                padding: 0;
+                li{
+                    margin: 0 auto 20px 0;
+                    list-style: none;
+                 
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+        .f__category{
+            color: white;
+            h3{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 150%;
+                margin-bottom: 25px;
+            }
+            ul{
+                padding: 0;
+                li{
+                    margin: 0 auto 20px 0;
+                    list-style: none;
+                 
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+        .f__price-list{
+            color: white;
+            h3{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 150%;
+                margin-bottom: 25px;
+            }
+            .f__price-list__btn{
+                background-color: $main_color;
+                border: none;
+                border-radius: 30px;
+                height: 60px;
+                width: 210px;
+                text-align: center;
+                margin-bottom: 20px;
+                transition: all 0.3s ease-in;
+                &:hover{
+                    background-color: $main_hover;
+                }
+                span{
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .price-list-icon{
+                        margin-left: 14px;
+                    }
+                }
+            }
+            p{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                margin-bottom: 15px;
+            }
+            .f__price-list__icons{
+                display: flex;
+
+                a{
+                    margin-right: 10px;
+                    .whatsapp{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: #00E676;
+                        
+                    }
+                }
+                a{
+                    .telegram{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: #40B3E0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .f__contact{
+            color: white;
+            h3{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 150%;
+                margin-bottom: 25px;
+            }
+            h4{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 150%;
+                margin-bottom: 5px;
+            }
+            p{
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 150%;
+                margin-bottom: 5px;
+            }
+            a{
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 150%;
+                color: white;
+            }
+            .f__contact__email{
+                margin-top: 25px;
+                margin-bottom: 25px;
+                h5{
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 18px;
+                    margin: 0;
+                }
+                p{
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+            .f__contact__payment{
+                display: flex;
+                .visa{
+                    margin-right: 5px;
+                    color: white;
+                    background-color: #00579F;
+                    height: 40px;
+                    width: 61px;
+                    border-radius: 5px;
+                    line-height: 40px;
+                    text-align: center;
+                    letter-spacing: 0.5px;
+                    font-weight: 600;
+                }
+                .mastercard{
+                    height: 40px;
+                    width: 61px;
+                    border-radius: 5px;
+                    background: #0F3560;                  
+                    position: relative;
+                    .mastercard__left{
+                        background: #EB001B;
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 11px;
+                        top: 7.3px;
+                    }
+                    .mastercard__right{
+                        background: #F79E1B;
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        position: absolute;
+                        right: 11px;
+                        top: 7.3px;
+                    }
+                    span{
+                        position: absolute;
+                        line-height: 39px;
+                        letter-spacing: 0.2px;
+                        font-size: 5px;
+                        left: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .Footer{
+        height: auto;
+        .container{
+            padding-top: 16px;
+            .f__info{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .f__info__logo{
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                }
+                .price-list__btn__sm{
+                    display: flex;
+                    width: 50%;
+                    height: 40px;
+                    margin: 0;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 15px;
+                    margin-bottom: 15px;
+                }
+                h4{
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 150%;
+                    margin-bottom: 15px;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 150%;
+                }
+                .info__email{
+                    margin-bottom: 30px;
+                }
+            }
+            .f__menu{
+                width: 50%;
+                margin-bottom: 75px;
+                h5{
+                    margin-bottom: 20px;
+                }
+                ul{
+                    li{
+                        a{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .f__category{
+                width: 50%;
+                margin-bottom: 25px;
+                h5{
+                    margin-bottom: 20px;
+                }
+                ul{
+                    li{
+                        a{
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+            }
+            .f__price-list{
+                width: 49%;
+                padding-top: 25px;
+                h3{
+                    display: none;
+                }
+                .f__price-list__btn{
+                    display: none;
+                }
+            }
+            .f__contact{
+                width: 50%;
+            }
+
+        }
+    }
+}

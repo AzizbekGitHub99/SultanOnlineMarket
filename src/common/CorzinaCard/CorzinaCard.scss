@@ -1,0 +1,106 @@
+$main_color: #FFC85E;
+$main_hover: #F3A50D;
+$text_outline: #3F4E65;
+
+.CorzinaCard{
+    margin: 50px 0;
+    display: flex;
+    .corzinaCard__img{
+        width: 280px;
+        height: 190px;
+        margin-right: 20px;
+        text-align: center;
+    }
+    .corzinaCard__description{
+        width: 560px;
+        padding-right: 85px;
+        .weight{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 130%;
+            color: $text_outline;
+            span{
+
+            }
+        }
+        h2{
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36px;
+            margin: 10px 0;
+        }
+        p{
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 150%;
+        }
+    }
+    .corzinaCard__function{
+        align-items: center;
+        padding-left: 45px;
+        width: calc(100% - 860px);
+        justify-content: space-between;                 
+        .adding__btns{
+            width: 115px;
+            justify-content: space-between;
+            .btns{
+                width: 34px;
+                height: 24px;
+                border-radius: 12px;
+                background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease-in;
+                &:hover{
+                    background-color: $main_color;
+                }
+            }
+        }           
+        .price{
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 130%;
+        }
+        .trash-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            background-color: $main_color;
+            transition: all 0.3s ease-in;
+            &:hover{
+                background-color: $main_hover;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .CorzinaCard{
+        display: block;
+        .corzinaCard__img{
+
+        }
+        .corzinaCard__description{
+            width: 100%;
+            padding: 0;
+            h2{
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+        .corzinaCard__function{
+            padding: 0;
+            width: 100%;
+            .price{
+                font-size: 16px;
+            }
+        }
+    }
+}

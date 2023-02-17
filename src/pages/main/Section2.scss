@@ -1,0 +1,41 @@
+$main_color: #FFC85E;
+$main_hover: #F3A50D;
+$text_outline: #3F4E65;
+
+.Section2{
+    // height: auto;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+    .container{
+        h1{
+            color: $main_color;
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 120%;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            span{
+                font-weight: 500;
+                color: black;
+            }
+        }
+        .Section2__cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .Section2{
+        .container{
+            h1{
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
